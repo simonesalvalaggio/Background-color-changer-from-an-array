@@ -20,19 +20,14 @@
     </div>
     <script>
       let color = ['yellow', 'green', 'blue'];
-      let c = 0; //contatore per debuggare
       let i= 0; // contatore
 
       document.querySelector(".click").addEventListener("click", () => {
         if(i <= color.length-1) {
-            console.log(color[i]); //for debugging
             document.body.style.backgroundColor = `${color[i]}`;
-            c = color.indexOf(color[i]); 
-            console.log(c);  //for debugging
             i++;
           } else {
             i = 0;
-                      
         }
       });
     </script>
