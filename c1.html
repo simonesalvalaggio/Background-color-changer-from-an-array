@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>TEST</h1>
+      <h4>SOME TEXT</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam est
+        velit sit veniam dolorem perferendis laudantium aliquam nemo sapiente
+        pariatur! Aliquid explicabo illum delectus dignissimos, debitis placeat
+        earum. Quasi, debitis?
+      </p>
+      <button class="click">Change color</button>
+    </div>
+    <script>
+      let color = ['yellow', 'green', 'blue'];
+      let c = 0; //contatore per debuggare
+      let i= 0; // contatore
+
+      document.querySelector(".click").addEventListener("click", () => {
+        if(i <= color.length-1) {
+            console.log(color[i]); //for debugging
+            document.body.style.backgroundColor = `${color[i]}`;
+            c = color.indexOf(color[i]); 
+            console.log(c);  //for debugging
+            i++;
+          } else {
+            i = 0;
+                      
+        }
+      });
+    </script>
+  </body>
+</html>
